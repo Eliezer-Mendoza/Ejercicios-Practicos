@@ -1,19 +1,70 @@
-﻿// // El Reto: Simulador de Combate Básico
-// Tu misión es crear un programa que simule un combate por turnos 1 contra 1:
-//     Las variables iniciales: Crea dos variables de tipo entero (int). Una para tu vida (vidaJugador = 100) y otra para la del enemigo (vidaEnemigo = 50).
-//     El ciclo de combate: Inicia un ciclo while que se siga repitiendo mientras tu vida sea mayor a 0 y (en C# el "y" se escribe &&) la vida del enemigo sea mayor a 0.
-//     El turno del jugador: Dentro del ciclo, muéstrale al usuario cuánta vida tiene cada uno y dale a elegir dos opciones:
-//         Presionar 1 para Disparar (le resta 15 de vida al enemigo).
-//         Presionar 2 para Curarse (te suma 20 de vida a ti).
-//         (Recuerda usar int.Parse(Console.ReadLine()) para leer la opción y un bloque if/else para aplicar los efectos).
-//     El turno del enemigo: Aún dentro del ciclo while, justo después de tu acción, el enemigo te ataca automáticamente (te resta 10 de vida). ¡Ojo! El enemigo solo debería atacarte si su vida sigue siendo mayor a 0 después de tu turno.
-//     El final: Cuando el ciclo termine (porque alguno de los dos llegó a 0 o menos), usa un if/else fuera del ciclo para imprimir un mensaje: "¡Has sobrevivido!" si ganaste, o "Fin del juego..." si perdiste.
+﻿
 using System;
 using Microsoft.VisualBasic;
 namespace Goty
 {
-    static void Main(string[] args)
+    class Juego
     {
+        static int VidaJugador = 100;
+        static int vidaEnemigo = 50;
+        static void Main (string[] args)
+        {
+            int opcion;
+            do
+            {
+                Console.WriteLine("\n Te vas a enfrentar al enemigo! \n 1. Dispararle. \n 2. Curarte.");
+                Console.WriteLine($"\t ===== VIDA GENERAL === \t \n 1. Jugador: {VidaJugador} \n 2. Enemigo: {vidaEnemigo}");
+                string? input = Console.ReadLine();
+                if (int.TryParse(input, out opcion) && opcion >0 && opcion <3)
+                {
+                    if (opcion == 1)
+                    {
+                        Disparar();
+                    Console.WriteLine($"Le quitaste: 15 de vida a tu enemigo. Vida total: {vidaEnemigo}");
+                    if (vidaEnemigo>0)
+                        {
+                             Atacarte();
+                    Console.WriteLine($"El enemigo te ataco y te bajo 20 puntos de vida. Vida total {VidaJugador}");
+                        }
+                    }
+                    else if (opcion == 2)
+                    {
+                        Curarte();
+                        Console.WriteLine($"Te has curado, tu vida total es de: {VidaJugador}");
+                              Atacarte();
+                    Console.WriteLine($"El enemigo te ataco y te bajo 20 puntos de vida. Vida total {VidaJugador}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Opcion invalida, pierdes tu turno.");
+                    }
+                } else
+                {
+                    Console.WriteLine("Opcion no valida. Intentelo de nuevo.");
+                }
+            } while (VidaJugador>0 && vidaEnemigo>0);
+            
+            if (VidaJugador>0)
+            {
+                Console.WriteLine("\n Has sobrevivido! Felicidades");
+            }
+            if (VidaJugador<=0)
+            {
+                Console.WriteLine("\n No has sobrevivido. Intentalo de nuevo");
+            }
+        }
         
+        static int Disparar()
+        {
+            return vidaEnemigo -=15;
+        }
+        static int Curarte()
+        {
+            return VidaJugador += 20;
+        }
+        static int Atacarte()
+        {
+            return VidaJugador-=20;
+        }
     }
 }
