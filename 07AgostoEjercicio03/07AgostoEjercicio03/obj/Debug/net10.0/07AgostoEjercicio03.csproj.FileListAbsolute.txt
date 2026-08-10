@@ -1,0 +1,14 @@
+C:\Users\Admin\OneDrive\Escritorio\UNI\Semestre 2\Programacion Estructurada\07AgostoEjercicio03\07AgostoEjercicio03\obj\Debug\net10.0\07AgostoEjercicio03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive\Escritorio\UNI\Semestre 2\Programacion Estructurada\07AgostoEjercicio03\07AgostoEjercicio03\obj\Debug\net10.0\07AgostoEjercicio03.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Escritorio\UNI\Semestre 2\Programacion Estructurada\07AgostoEjercicio03\07AgostoEjercicio03\obj\Debug\net10.0\07AgostoEjercicio03.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Escritorio\UNI\Semestre 2\Programacion Estructurada\07AgostoEjercicio03\07AgostoEjercicio03\obj\Debug\net10.0\07AgostoEjercicio03.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Escritorio\UNI\Semestre 2\Programacion Estructurada\07AgostoEjercicio03\07AgostoEjercicio03\bin\Debug\net10.0\07AgostoEjercicio03.exe
+C:\Users\Admin\OneDrive\Escritorio\UNI\Semestre 2\Programacion Estructurada\07AgostoEjercicio03\07AgostoEjercicio03\bin\Debug\net10.0\07AgostoEjercicio03.deps.json
+C:\Users\Admin\OneDrive\Escritorio\UNI\Semestre 2\Programacion Estructurada\07AgostoEjercicio03\07AgostoEjercicio03\bin\Debug\net10.0\07AgostoEjercicio03.runtimeconfig.json
+C:\Users\Admin\OneDrive\Escritorio\UNI\Semestre 2\Programacion Estructurada\07AgostoEjercicio03\07AgostoEjercicio03\bin\Debug\net10.0\07AgostoEjercicio03.dll
+C:\Users\Admin\OneDrive\Escritorio\UNI\Semestre 2\Programacion Estructurada\07AgostoEjercicio03\07AgostoEjercicio03\bin\Debug\net10.0\07AgostoEjercicio03.pdb
+C:\Users\Admin\OneDrive\Escritorio\UNI\Semestre 2\Programacion Estructurada\07AgostoEjercicio03\07AgostoEjercicio03\obj\Debug\net10.0\07AgostoEjercicio03.dll
+C:\Users\Admin\OneDrive\Escritorio\UNI\Semestre 2\Programacion Estructurada\07AgostoEjercicio03\07AgostoEjercicio03\obj\Debug\net10.0\refint\07AgostoEjercicio03.dll
+C:\Users\Admin\OneDrive\Escritorio\UNI\Semestre 2\Programacion Estructurada\07AgostoEjercicio03\07AgostoEjercicio03\obj\Debug\net10.0\07AgostoEjercicio03.pdb
+C:\Users\Admin\OneDrive\Escritorio\UNI\Semestre 2\Programacion Estructurada\07AgostoEjercicio03\07AgostoEjercicio03\obj\Debug\net10.0\07AgostoEjercicio03.genruntimeconfig.cache
+C:\Users\Admin\OneDrive\Escritorio\UNI\Semestre 2\Programacion Estructurada\07AgostoEjercicio03\07AgostoEjercicio03\obj\Debug\net10.0\ref\07AgostoEjercicio03.dll
