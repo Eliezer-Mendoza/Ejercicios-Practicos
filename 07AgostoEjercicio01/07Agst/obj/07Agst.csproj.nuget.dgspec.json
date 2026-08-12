@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\07AgostoEjercicio01\\07Agst\\07Agst.csproj": {}
+    "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\07AgostoEjercicio01\\07Agst\\07Agst.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\07AgostoEjercicio01\\07Agst\\07Agst.csproj": {
+    "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\07AgostoEjercicio01\\07Agst\\07Agst.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\07AgostoEjercicio01\\07Agst\\07Agst.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\07AgostoEjercicio01\\07Agst\\07Agst.csproj",
         "projectName": "07Agst",
-        "projectPath": "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\07AgostoEjercicio01\\07Agst\\07Agst.csproj",
+        "projectPath": "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\07AgostoEjercicio01\\07Agst\\07Agst.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\07AgostoEjercicio01\\07Agst\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\07AgostoEjercicio01\\07Agst\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

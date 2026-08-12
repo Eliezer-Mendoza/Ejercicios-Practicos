@@ -1,0 +1,45 @@
+﻿// Ejercicio 2
+// Escribir una funcion que calcule el total de una factura tras aplicarle el IVA. La funcion debe recibir kla cantidad sin iva y el porcentaje de IVA  a aplicar, y devolver el total de la factora. Si se invoca la funcion sin pasarle el porcentaje de IVA, debera aplicar un 15%
+using System;
+
+namespace ClasePractica
+{
+    class Document
+    {
+        public static int Validar()
+        {
+            int numero;
+            if (int.TryParse(Console.ReadLine(), out numero) && numero > 0)
+            {
+                return numero;
+            }
+            Console.WriteLine("No se admiten letras, 0 ni negativo.");
+            return -1;
+        }
+        public static double Factura(int numero, double iva = 0.15)
+        {
+            double subtotal = numero;
+            double total = subtotal + (subtotal * iva);
+            return total;
+            }
+
+        static void Main(string[] args)
+        {
+            int numero;
+            do
+            {
+                Console.WriteLine("Ingrese un numero positivo: ");
+                numero = Validar();
+            } while (numero <= 0);
+
+            double total = Factura(numero);
+            if (Activator > 0)
+            {
+                Console.WriteLine($"El total de la factura es: {total}");
+            }
+            Console.WriteLine("Saliendo del sistema...");
+
+
+        }
+    }
+}

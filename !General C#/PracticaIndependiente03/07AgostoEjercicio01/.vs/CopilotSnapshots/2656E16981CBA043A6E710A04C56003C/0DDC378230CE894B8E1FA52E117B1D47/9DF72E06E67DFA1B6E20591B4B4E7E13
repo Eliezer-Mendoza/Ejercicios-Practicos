@@ -1,0 +1,64 @@
+﻿// Practica 7 de agosto
+// Escriba una funcion que reciba un numero entero positivo y devuelva su factorial
+using System;
+
+namespace ClasePractica
+{
+    class Document
+    {
+        public static int Validar()
+        {
+            int numero;
+            if (int.TryParse(Console.ReadLine(), out numero) && numero > 0)
+            {
+                return numero;
+            }
+            Console.WriteLine("No se admiten letras, 0 ni negativo.");
+            return -1;
+        }
+        static void Menu()
+        {
+            Console.WriteLine("\n1 1.Entrar al sistema.  2. Salir\n");
+        }
+        static void Main(string[] args)
+        {
+            int opcion;
+            do
+            {
+                Menu();
+                opcion = Validar();
+                if (opcion == -1) continue; // entrada no válida, mostrar menu de nuevo
+            } while (opcion < 1 || opcion > 2);
+
+            switch (opcion)
+            {   
+
+                case 1:
+                    Console.WriteLine("Ingrese un numero entero positivo: ");
+                    int numero = Validar();
+                    if (numero < 0)
+                    {
+                        Console.WriteLine("No se admiten letras, 0 ni negativo.");
+                    }
+                    else
+                    {
+                        int factorial = 1;
+                        for (int i = 1; i <= numero; i++)
+                        {
+                            factorial *= i;
+                        }
+                        Console.WriteLine($"El factorial de {numero} es: {factorial}");
+                    }
+                    break;
+                case 2:
+                    Console.WriteLine("Saliendo del sistema...");
+                    return;
+                default:
+                    Console.WriteLine("Opción inválida. Intente nuevamente.");
+                    break;
+            }
+        }
+
+        }
+    }
+}

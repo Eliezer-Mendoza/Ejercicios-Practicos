@@ -13,6 +13,7 @@ namespace Agosto07Ejercicio04
         static double CCuadrado(double lados)
         {
             return lados * lados;
+
         }
 
         static double CRectangulo(double b, double altura)

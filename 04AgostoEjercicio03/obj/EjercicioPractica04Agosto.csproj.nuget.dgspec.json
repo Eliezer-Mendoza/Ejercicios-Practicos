@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio03\\EjercicioPractica04Agosto.csproj": {}
+    "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio03\\EjercicioPractica04Agosto.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio03\\EjercicioPractica04Agosto.csproj": {
+    "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio03\\EjercicioPractica04Agosto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio03\\EjercicioPractica04Agosto.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio03\\EjercicioPractica04Agosto.csproj",
         "projectName": "EjercicioPractica04Agosto",
-        "projectPath": "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio03\\EjercicioPractica04Agosto.csproj",
+        "projectPath": "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio03\\EjercicioPractica04Agosto.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio03\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio03\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

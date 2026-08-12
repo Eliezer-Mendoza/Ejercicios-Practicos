@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio02\\Ejercici04ags\\Ejercici04ags.csproj": {}
+    "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio02\\Ejercici04ags\\Ejercici04ags.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio02\\Ejercici04ags\\Ejercici04ags.csproj": {
+    "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio02\\Ejercici04ags\\Ejercici04ags.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio02\\Ejercici04ags\\Ejercici04ags.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio02\\Ejercici04ags\\Ejercici04ags.csproj",
         "projectName": "Ejercici04ags",
-        "projectPath": "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio02\\Ejercici04ags\\Ejercici04ags.csproj",
+        "projectPath": "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio02\\Ejercici04ags\\Ejercici04ags.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio02\\Ejercici04ags\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\04AgostoEjercicio02\\Ejercici04ags\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

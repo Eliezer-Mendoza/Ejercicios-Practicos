@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\!General C#\\PracticaIndependiente01\\PracticaIndependiente01.csproj": {}
+    "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\!General C#\\PracticaIndependiente01\\PracticaIndependiente01.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\!General C#\\PracticaIndependiente01\\PracticaIndependiente01.csproj": {
+    "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\!General C#\\PracticaIndependiente01\\PracticaIndependiente01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\!General C#\\PracticaIndependiente01\\PracticaIndependiente01.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\!General C#\\PracticaIndependiente01\\PracticaIndependiente01.csproj",
         "projectName": "PracticaIndependiente01",
-        "projectPath": "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\!General C#\\PracticaIndependiente01\\PracticaIndependiente01.csproj",
+        "projectPath": "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\!General C#\\PracticaIndependiente01\\PracticaIndependiente01.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\!General C#\\PracticaIndependiente01\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\OneDrive\\Escritorio\\UNI\\Semestre 2\\Programacion Estructurada\\!General C#\\PracticaIndependiente01\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
