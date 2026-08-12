@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CompraDivisa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7b2a25f0e4f380e83c28fe439db34093fbcc1e0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee1c4b365f82c1b90b5c9d466afa219c79467697")]
 [assembly: System.Reflection.AssemblyProductAttribute("CompraDivisa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CompraDivisa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
