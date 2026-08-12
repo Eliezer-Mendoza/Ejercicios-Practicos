@@ -1,0 +1,83 @@
+﻿// Compra de divisa 
+// Comprar dolares a 37.2
+// Vender un dolar a 36.62
+// 11mil el maximo de dolares a comprar
+// 10mil el maximo de dolares a vender
+
+using System;
+namespace divisa
+{
+    class divissas
+    {
+        static void Menu()
+        {
+            Console.WriteLine("1. Comprar divisa");
+            Console.WriteLine("2. Vender divisa");
+        }
+        static double comprar(double d1, double d2)
+        {
+            return d1 / d2;
+        }
+        static double vender(double d1, double d2)
+        {
+            return d1 * d2;
+        }
+        static void Main(string[] args)
+        {
+            double d1, d2;
+            {
+                Menu();
+                try
+                {
+                    do
+                    {
+                        Console.WriteLine("Ingrese una opcion: ");
+                        int opcion;
+                        if (!int.TryParse(Console.ReadLine(), out opcion))
+                        {
+                            Console.WriteLine("Opcion invalida");
+                            continue;
+                        }
+                        switch (opcion)
+                        {
+
+                            case 1:
+                                Console.WriteLine("Ingrese la cantidad de dolares a comprar: ");
+                                if (d1 < 0)
+                                {
+                                    Console.WriteLine("Ingrese un valor valido");
+                                    continue;
+                                }
+                                double d1 = Convert.ToDouble(Console.ReadLine());
+                                double precioCompra = 37.2;
+                                double totalCompra = comprar(d1, precioCompra);
+                                Console.WriteLine("El total a pagar es: " + totalCompra);
+                                break;
+                            case 2:
+                                Console.WriteLine("Ingrese la cantidad de dolares a vender: ");
+                                if (d1 < 0)
+                                {
+                                    Console.WriteLine("Ingrese un valor valido");
+                                    continue;
+                                }
+                                double d1 = Convert.ToDouble(Console.ReadLine());
+                                double precioVenta = 36.62;
+                                double totalVenta = vender(d1, precioVenta);
+                                Console.WriteLine("El total a recibir es: " + totalVenta);
+                                break;
+                            default:
+                                Console.WriteLine("Opcion invalida");
+                                break;
+                        }
+                    } while (true);
+                } catch (Exception)
+                {
+                    Console.WriteLine("Ingrese un valor valido");
+                }
+
+            }
+        }
+    }
+}
+    
+}
