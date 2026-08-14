@@ -1,21 +1,4 @@
-﻿// Ejercicio: Analizador de Calificaciones
-// El Problema:
-//Escribe un programa en C# de consola que actúe como un pequeño sistema para un profesor. 
-// El programa debe hacer lo siguiente:
-//    Solicitar cantidad: Preguntar al usuario cuántos estudiantes desea registrar.
-  //  Capturar datos: Usar un ciclo para pedir el nombre y la calificación (de 0 a 100) 
-  // de cada estudiante.
-  //  Puedes guardar estos datos en arreglos paralelos (string[] para nombres y int[] o double[] 
-  // para calificaciones) o crear una clase/struct Estudiante y usar una List<Estudiante>.
-    //Procesar y mostrar resultados: Una vez ingresados todos los datos, 
-    // el programa debe calcular e imprimir en consola:
-      //  El promedio de calificaciones de todo el grupo.
-        // El nombre del estudiante con la calificación más alta (y cuál fue esa calificación).
-        // Cuántos estudiantes aprobaron (calificación de 60 o más)
-        //  y cuántos reprobaron (menos de 60).
-
-using System;
-
+﻿using System;
 namespace Calificaciones
 {
     class Principal
@@ -29,7 +12,6 @@ namespace Calificaciones
             {
                 Console.Write("Ingrese la cantidad de estudiantes (minimo 1): ");
                 input = Console.ReadLine();
-
                 esValido = int.TryParse(input, out numero);
                 if (!esValido || numero <= 0)
                 {
@@ -47,12 +29,10 @@ namespace Calificaciones
 
             string[] nombres = new string[cantidadAlumnos];
             double[] calificaciones = new double[cantidadAlumnos];
-
             for (int i = 0; i < cantidadAlumnos; i++)
             {
                 Console.Write($"Ingrese el nombre del estudiante {i + 1}: ");
                 nombres[i] = Console.ReadLine();
-
                 do
                 {
                     Console.Write($"Ingrese la calificación de {nombres[i]} (0-100): ");
