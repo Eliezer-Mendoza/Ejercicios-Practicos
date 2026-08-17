@@ -44,7 +44,8 @@ namespace Calificaciones
                     }
                 }
                 while (!esValido || calificaciones[i] < 0 || calificaciones[i] > 100);
-            } catch (FormatException)
+            }
+             } catch (FormatException)
             {
                 Console.WriteLine("Algo ocurrio, intente de nuevo.");
             }
