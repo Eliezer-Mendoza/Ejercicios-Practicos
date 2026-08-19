@@ -1,0 +1,63 @@
+# HOG (Histogram of Oriented Gradients) Detector
+# HOG descriptors are excellent for pedestrian detection.
+
+import cv2 as cv
+import time
+import mediapipe as mp
+
+toma = cv.VideoCapture(0)
+
+if not toma.isOpened():
+    print("no se activo correctamente.")
+    exit()
+    
+fps_inicial = toma.get(cv.CAP_PROP_FPS)
+width = int(toma.get(cv.CAP_PROP_FRAME_WIDTH))
+height = int(toma.get(cv.CAP_PROP_FRAME_HEIGHT))
+frame_count = int(toma.get(cv.CAP_PROP_FRAME_COUNT))
+
+print(f"FPS inicial: {fps_inicial}, Tamaño: {width}x{height}, Frame: {frame_count}")
+
+hog = cv.HOGDescriptor()
+hog.setSVMDetector(cv.HOGDescriptor_getDefaultPeopleDetector())
+
+while True:
+    ret, ftg = toma.read()
+    
+    if not ret:
+        print("Error de frames. se cerrara el programa.")
+        break
+    ftg = cv.flip(ftg, 1)
+
+    ftg = cv.resize(ftg, (640, 480))
+    
+    tiempo = time.time()
+    
+    found, weights = hog.detectMultiScale(
+        ftg, 
+        winStride=(8, 8),
+        padding=(8, 8),
+        scale=1.05
+    )
+    
+    elapsed_time = time.time() - tiempo
+    fps = 1.0 / elapsed_time if elapsed_time > 0 else 0.0
+
+# dibuja rectangulos para detectar personas
+    for (x, y, w, h) in found:
+        cv.rectangle(ftg, (x, y), (x + w, y + h), (0, 255, 0), 2)
+        
+  
+    cv.putText(ftg, f'personas: {len(found)}', (10, 30),
+               cv.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+    cv.putText(ftg, f'FPS: {fps:.1f}', (10, 70),
+               cv.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+    
+    
+    cv.imshow('deteccion', ftg)
+    
+    if cv.waitKey(1) & 0xFF == ord('q'):
+        break
+
+toma.release()
+cv.destroyAllWindows()

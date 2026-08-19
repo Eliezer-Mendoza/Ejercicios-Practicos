@@ -41,12 +41,6 @@ namespace Practica06
         {
             return precio/entradas;
         }
-
-        static double PrecioAltoYBajo (double precio)
-        {
-            precio = 8888888888888;
-            if ()
-        }
         static double ValidacionPrecio()
         {
             string input;
@@ -65,7 +59,8 @@ namespace Practica06
         {
             try
             {
-            Console.WriteLine("Ingrese ")
+            Console.WriteLine("Ingrese el total de entradas vendidas");
+           entradasvendidas = Validacion();
                 
             } catch (OverflowException)
             {
