@@ -18,25 +18,31 @@ namespace Cedula
                     Console.WriteLine("Cédula inválida. Debe tener al menos 14 caracteres.\n");
                     continue;
                 }
+
                 // 001 28 10 07-10
-                string diaNaS = cedula.Substring(4,2);
+                string diaNaS = cedula.Substring(4, 2);
                 string mesNaS = cedula.Substring(6, 2);
                 string añoNaS = cedula.Substring(7, 2);
-             
+
+                int dia;
+                int mes;
                 int año2Digitos;
-                if (!int.TryParse(añoNaS, out año2Digitos))
+                if (!int.TryParse(diaNaS, out dia) || dia < 1 || dia > 31 ||
+                    !int.TryParse(mesNaS, out mes) || mes < 1 || mes > 12 ||
+                    !int.TryParse(añoNaS, out año2Digitos))
                 {
                     Console.WriteLine("La cédula no es válida.\n");
                     continue;
                 }
+
                 int añoCompleto = (año2Digitos >= 26) ? 1900 + año2Digitos : 2000 + año2Digitos;
                 if (añoCompleto < 1926 || añoCompleto > 2010)
                 {
                     Console.WriteLine("El año de nacimiento debe estar entre 1926 y 2010.\n");
-                    continue; 
-             }
-                return cedula;
+                    continue;
+                }
 
+                return cedula;
             } while (true);
         }
 
@@ -48,11 +54,6 @@ namespace Cedula
             int anioActual = DateTime.Now.Year; 
             int edad = anioActual - añoNacimiento;
             return edad;
-        }
-        static int obtenerdia(string cedula)
-        {
-            string diaNaS = cedula.Substring(4,2);
-
         }
         static void Main(string[] args)
         {
