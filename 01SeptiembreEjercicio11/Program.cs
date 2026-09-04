@@ -19,7 +19,7 @@ namespace Cedula
                     continue;
                 }
 
-                // 001 28 10 07-10
+            
                 string diaNaS = cedula.Substring(4, 2);
                 string mesNaS = cedula.Substring(6, 2);
                 string añoNaS = cedula.Substring(7, 2);
