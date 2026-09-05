@@ -1,10 +1,62 @@
 ﻿using System;
-using System.Collections.Generic;
-namespace PruebaEj1
+namespace PruebaEj2
 {
+    class Nodo
+    {
+        public decimal Valor;
+        public Nodo Siguiente;
+        public Nodo(decimal valor)
+        {
+            Valor = valor;
+            Siguiente = null;
+        }
+    }
+    class ListaEnlazada
+    {
+        private Nodo inicio;
+        public ListaEnlazada()
+        {
+            inicio = null;
+        }
+        public void AgregarInicio(decimal valor)
+        {
+            Nodo nuevo = new Nodo(valor);
+            nuevo.Siguiente = inicio;
+            inicio = nuevo;
+        }
+        public int Cantidad()
+        {
+            int cantidad = 0;
+            Nodo actual = inicio;
+            while (actual != null)
+            {
+                cantidad++;
+                actual = actual.Siguiente;
+            }
+            return cantidad;
+        }
+        public void Mostrar()
+        {
+            if (inicio == null)
+            {
+                Console.WriteLine("No hay registros de ingresos.");
+                return;
+            }
+            Console.WriteLine("\nResultados de antiguedad economica:");
+            Nodo actual = inicio;
+            int numUsuario = Cantidad();
+            while (actual != null)
+            {
+                Console.WriteLine($"- Usuario {numUsuario}: Calculo Total: {actual.Valor:C}");
+                actual = actual.Siguiente;
+                numUsuario--;
+            }
+            Console.WriteLine();
+        }
+    }
     class Principal
     {
-        static Stack<decimal> Ingresos = new Stack<decimal>();
+        static ListaEnlazada Ingresos = new ListaEnlazada();
         static void Main(string[] args)
         {
             do
@@ -15,7 +67,7 @@ namespace PruebaEj1
                     switch (ValidarNum(1, 3))
                     {
                         case 1: ProcesarAntiguedad(); break;
-                        case 2: MostrarResultados(); break;
+                        case 2: Ingresos.Mostrar(); break; 
                         case 3: Console.WriteLine("Saliendo del sistema..."); return;
                     }
                 }
@@ -35,28 +87,12 @@ namespace PruebaEj1
             int antiguedad = añoActual - añoIngresado;
             decimal bonoAntiguedad = salario * ((2m * antiguedad + 1m) / 100m);
             decimal antiguedadEconomica = salario + bonoAntiguedad;
-            Ingresos.Push(antiguedadEconomica);
+            Ingresos.AgregarInicio(antiguedadEconomica);
             Console.WriteLine("\n--- Resultados del Calculo ---");
             Console.WriteLine($"Antiguedad: {antiguedad} años | Salario base: {salario:C}");
             Console.WriteLine($"Bono: {bonoAntiguedad:C} | Total: {antiguedadEconomica:C}");
             Console.WriteLine("------------------------------\n");
         }
-       static void MostrarResultados()
-{
-    if (Ingresos.Count == 0)
-    {
-        Console.WriteLine("No hay registros de ingresos.");
-        return;
-    }
-    Console.WriteLine("\nResultados de antiguedad economica:");
-    int num = Ingresos.Count; 
-    foreach (decimal ingreso in Ingresos)
-    {
-        Console.WriteLine($"- Usuario {num}: Calculo Total: {ingreso:C}");
-        num--;
-    }
-    Console.WriteLine();
-}
         static int ValidarNum(int min, int max)
         {
             do
@@ -72,7 +108,8 @@ namespace PruebaEj1
             do
             {
                 if (decimal.TryParse(Console.ReadLine(), out decimal numero) && numero >= min && numero <= max)
-                    return numero;                    
+                    return numero;
+                    
                 Console.WriteLine($"Entrada invalida. El valor debe estar entre {min} y {max}.");
             } while (true);
         }
