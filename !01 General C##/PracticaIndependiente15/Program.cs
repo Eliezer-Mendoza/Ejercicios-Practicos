@@ -11,7 +11,7 @@ namespace Eje
                 Console.Write($"Ingrese el número {i + 1}: ");
                 nums[i] = int.Parse(Console.ReadLine());
             }
-            Console.Write("\nAhora ingrese el target: ");
+            Console.Write("\nAhora ingrese el pbjetivo: ");
             int target = int.Parse(Console.ReadLine());
             int[] resultado = TwoSums(nums, target);
             if (resultado != null)
@@ -21,12 +21,12 @@ namespace Eje
                 Console.WriteLine("\n=================================");
                 Console.WriteLine($"Existe combinacion");
                 Console.WriteLine($"Posiciones en el arreglo: [{pos1}, {pos2}]");
-                Console.WriteLine($"Operación: {nums[pos1]} + {nums[pos2]} = {target}");
+                Console.WriteLine($"Operacion: {nums[pos1]} + {nums[pos2]} = {target}");
                 Console.WriteLine("=================================");
             }
             else
             {
-                Console.WriteLine("\nNo existe ninguna combinacion en el arreglo que sume el target.");
+                Console.WriteLine("\nNo existe ninguna combinacion en el arreglo que sume el objetivo.");
             }
         }
         static int[] TwoSums(int[] nums, int target)

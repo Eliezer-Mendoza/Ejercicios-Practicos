@@ -1,25 +1,13 @@
 ﻿using System;
-namespace principal
+namespace Practica
 {
-    class programa
+    class Program
     {
-        static void Main(string[]args)
+        static void Main(string[] args)
         {
-            
-        }
-        static void Validar()
-        {
-            string input;
-            double numero;
-            do
-            {
-                input = Console.ReadLine();
-                if(double.TryParse(input, out numero) && numero>0)
-                {
-                    return numero;
-                }
-                Console.WriteLine("Error. Entrada no válida");
-            } while(true);
+            Console.WriteLine(Kata.Likes(new string[0]));
+            Console.WriteLine(Kata.Likes(new string[] { "Peter" })); 
+            Console.WriteLine(Kata.Likes(new string[] { "Alex", "Jacob", "Mark", "Max" })); 
         }
     }
 }
