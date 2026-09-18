@@ -3,7 +3,7 @@
 namespace ListaSimplementeEnlazada
 {
     // Clase que representa cada nodo de la lista
-    class Nodo
+    class Nodo 
     {
         public double Nota;
         public Nodo Siguiente;
