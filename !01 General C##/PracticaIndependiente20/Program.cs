@@ -24,9 +24,48 @@ namespace FokinLista
     {
         private Nodo inicio;
 
-        public void Agregar()
+        public void Agregar(int contador)
         {
-            
+            Nodo nuevo = new Nodo(contador);
+            nuevo.Siguiente = inicio;
+                inicio = nuevo;
+        }
+        public void Mostrar()
+        {
+            Nodo actual = inicio;
+            Console.WriteLine("Lista actual: ");
+            while(actual != null)
+            {
+
+                Console.WriteLine(actual.Contador + "--->");
+                actual = actual.Siguiente;
+            }
+            Console.WriteLine("null\n");
+        }
+        public int Contar()
+{
+    int total = 0;           // Empezamos a contar desde cero
+    Nodo actual = inicio;    // Nos paramos en el primer vagón
+
+    while(actual != null)    // Mientras haya un vagón donde pisar...
+    {
+        total++;                   // Sumamos 1 a nuestra cuenta
+        actual = actual.Siguiente; // Saltamos al siguiente vagón
+    }
+
+    return total; // Cuando el while termina (llegó a null), devolvemos el total
+}
+    }
+    class Principal
+    {
+        static void Main(string[] args)
+        {
+            ListaSimpleEnlazadaxd miLista = new ListaSimpleEnlazadaxd();
+            miLista.Agregar(12);
+            miLista.Agregar(14);
+            miLista.Agregar(19);
+            Console.WriteLine("Datos: "); miLista.Mostrar();
+            Console.WriteLine("Contador: " + miLista.Contar());
         }
     }
 }
