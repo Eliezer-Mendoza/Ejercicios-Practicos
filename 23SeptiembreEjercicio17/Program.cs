@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.ComponentModel.Design;
-
 namespace OrdenamientoBurbuja
 {
     class Burbuja
