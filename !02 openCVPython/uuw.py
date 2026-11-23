@@ -87,7 +87,7 @@ def main():
         
         dt = time.time() - t
 
-        # Display detection time
+        # Display detection tim
         draw_str(vis, (20, 20), 'time: %.1f ms' % (dt * 1000))
         cv.imshow('Face Detection', vis)
 
